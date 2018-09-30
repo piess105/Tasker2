@@ -1,3 +1,4 @@
+using DLToolkit.Forms.Controls;
 using System;
 using Tasker.Mobile.Infrastructure;
 using Tasker.Mobile.UI;
@@ -13,7 +14,8 @@ namespace Tasker.Mobile
 		public App ()
 		{
 			InitializeComponent();
-		}
+            FlowListView.Init();
+        }
 
 		protected override void OnStart ()
 		{

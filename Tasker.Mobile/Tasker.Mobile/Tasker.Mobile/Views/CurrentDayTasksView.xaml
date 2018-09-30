@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             x:Class="Tasker.Mobile.Views.CurrentDayTasksView">
+  <ContentView.Content>
+        <Grid>
+            <flv:FlowListView x:Name="Kowadlo" FlowColumnCount="3" SeparatorVisibility="None" HasUnevenRows="True"
+	FlowItemTappedCommand="{Binding ItemTappedCommand}" FlowLastTappedItem="{Binding LastTappedItem}"
+	 >
+
+                <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <BoxView BackgroundColor="Red" Margin="5,5" HeightRequest="100" WidthRequest="100" />
+                            <Label Margin="5,5" HorizontalOptions="Fill" VerticalOptions="Fill"  LineBreakMode="CharacterWrap" BackgroundColor="Red"
+				XAlign="Center" YAlign="Center" Text="{Binding}"/>
+                        </Grid>
+                       
+                       
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+
+            </flv:FlowListView>
+        </Grid>
+  </ContentView.Content>
+</ContentView>

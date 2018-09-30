@@ -13,8 +13,7 @@
             <Button HeightRequest="55" HorizontalOptions="Center" Text="lewo" Grid.Column="0" Command="{Binding OnLeftClickedCommand}" />
             <Button HeightRequest="55" HorizontalOptions="Center" Text="prawo" Grid.Column="2" Command="{Binding OnRightClickedCommand}"/>
 
-            <Label
-                
+            <Label               
                 HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" FontSize="Large" Text="{Binding Date, StringFormat='\{0:dd.MM.yyyy}'}"/>
 
         </Grid>
