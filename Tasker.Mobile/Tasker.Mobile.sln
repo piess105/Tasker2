@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasker.Mobile.Android", "Tasker.Mobile\Tasker.Mobile.Android\Tasker.Mobile.Android.csproj", "{73519648-5E19-4F92-97A1-EE3373A03A6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasker.Mobile", "Tasker.Mobile\Tasker.Mobile\Tasker.Mobile.csproj", "{75D38581-741B-449C-AB97-853B1548288C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasker.Mobile", "Tasker.Mobile\Tasker.Mobile\Tasker.Mobile.csproj", "{75D38581-741B-449C-AB97-853B1548288C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasker.Mobile.UI", "Tasker.Mobile.UI\Tasker.Mobile.UI.csproj", "{08A23205-65F1-4964-9154-4AFEFD8A7AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasker.Mobile.UI.Pub", "Tasker.Mobile.UI.Pub\Tasker.Mobile.UI.Pub.csproj", "{38F7EC8E-EAF0-43DD-84F5-1D32398656B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,14 @@ Global
 		{75D38581-741B-449C-AB97-853B1548288C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75D38581-741B-449C-AB97-853B1548288C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{75D38581-741B-449C-AB97-853B1548288C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{08A23205-65F1-4964-9154-4AFEFD8A7AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A23205-65F1-4964-9154-4AFEFD8A7AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A23205-65F1-4964-9154-4AFEFD8A7AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A23205-65F1-4964-9154-4AFEFD8A7AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F7EC8E-EAF0-43DD-84F5-1D32398656B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F7EC8E-EAF0-43DD-84F5-1D32398656B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F7EC8E-EAF0-43DD-84F5-1D32398656B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F7EC8E-EAF0-43DD-84F5-1D32398656B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

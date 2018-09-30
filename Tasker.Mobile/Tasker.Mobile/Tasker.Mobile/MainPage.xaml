@@ -2,13 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Tasker.Mobile"
+             xmlns:views="clr-namespace:Tasker.Mobile.Views"
              x:Class="Tasker.Mobile.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <views:NavigationView Grid.Row="0" VerticalOptions="Center" Grid.RowSpan="2"/>
+
+        <Button Text="Siema" Grid.Row="2"/>
+
+    </Grid>
 
 </ContentPage>
