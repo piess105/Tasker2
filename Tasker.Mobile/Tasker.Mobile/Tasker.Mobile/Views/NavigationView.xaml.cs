@@ -14,7 +14,7 @@ namespace Tasker.Mobile.Views
 	{
 		public NavigationView ()
 		{
-			InitializeComponent ();
+			InitializeComponent ();            
 		}
 	}
 }

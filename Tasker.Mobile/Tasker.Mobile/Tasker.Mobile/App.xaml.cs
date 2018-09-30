@@ -1,4 +1,7 @@
 using System;
+using Tasker.Mobile.Infrastructure;
+using Tasker.Mobile.UI;
+using Unity;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,14 +13,18 @@ namespace Tasker.Mobile
 		public App ()
 		{
 			InitializeComponent();
-
-			MainPage = new MainPage();
 		}
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            var container = new UnityContainer();
+            Installer.Install(container);
+            Tasker.Mobile.UI.Infrastructure.Installer.Install(container);
+
+            var appMgr = container.Resolve<AppManager<MainPage>>();
+
+            MainPage = appMgr.Start();
+        }
 
 		protected override void OnSleep ()
 		{

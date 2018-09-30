@@ -12,7 +12,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <views:NavigationView Grid.Row="0" VerticalOptions="Center" Grid.RowSpan="2"/>
+        <views:NavigationView Grid.Row="0" VerticalOptions="Center" Grid.RowSpan="2" BindingContext="{Binding NavigationViewModel}"/>
 
         <Button Text="Siema" Grid.Row="2"/>
 
